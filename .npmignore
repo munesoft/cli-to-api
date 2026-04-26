@@ -1,0 +1,10 @@
+src/
+tests/
+*.test.ts
+tsconfig.json
+jest.config.js
+.eslintrc*
+coverage/
+.github/
+*.md
+!README.md

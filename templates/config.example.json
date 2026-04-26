@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "route": "/echo",
+      "command": "echo",
+      "method": "GET",
+      "params": ["message"],
+      "description": "Echo a message back",
+      "tags": ["demo"]
+    },
+    {
+      "route": "/disk/usage",
+      "command": "df -h",
+      "method": "GET",
+      "params": [],
+      "description": "Show disk usage",
+      "tags": ["system"]
+    },
+    {
+      "route": "/system/uptime",
+      "command": "uptime",
+      "method": "GET",
+      "params": [],
+      "description": "Show system uptime",
+      "tags": ["system"]
+    },
+    {
+      "route": "/files/list",
+      "command": "ls",
+      "method": "GET",
+      "params": ["all", "long"],
+      "description": "List files in current directory",
+      "flagStyle": "single",
+      "tags": ["files"]
+    },
+    {
+      "route": "/git/log",
+      "command": "git log",
+      "method": "GET",
+      "params": ["oneline", "n"],
+      "description": "Show git log",
+      "parseOutputAsJson": false,
+      "tags": ["git"]
+    },
+    {
+      "route": "/python/run",
+      "command": "python3 scripts/my_script.py",
+      "method": "POST",
+      "params": ["input", "format"],
+      "description": "Run a Python script with input",
+      "timeout": 60000,
+      "tags": ["scripts"]
+    }
+  ],
+  "server": {
+    "port": 3000,
+    "host": "0.0.0.0",
+    "basePath": ""
+  },
+  "security": {
+    "rateLimitWindowMs": 60000,
+    "rateLimitMax": 60
+  },
+  "logging": {
+    "level": "info",
+    "requests": true
+  }
+}
