@@ -5,7 +5,7 @@
 [![npm version](https://img.shields.io/npm/v/@munesoft/cli-to-api.svg)](https://www.npmjs.com/package/@munesoft/cli-to-api)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-`@munesoft/cli-to-api` is the "Zapier for CLI tools (developer edition)." Define a JSON config, run one command, and every CLI tool on your machine becomes an HTTP endpoint with authentication, rate limiting, Swagger docs, and injection protection — zero boilerplate.
+`@munesoft/cli-to-api` is the "Zapier for CLI tools (developer edition)." Define a JSON config, run one command, and every CLI tool on your machine becomes an HTTP endpoint with authentication, rate limiting, Swagger docs, and injection protection ... zero boilerplate.
 
 ---
 
